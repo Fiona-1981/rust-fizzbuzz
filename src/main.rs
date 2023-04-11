@@ -1,13 +1,14 @@
 fn main() {
-    let num = 1..=40;
+    for n in 1..=40 {
 
-    if num % 15 == 0 {
-        println!("FizzBuzz");
-    } else if num % 3 == 0 {
-        println!("Fizz");
-    } else if num % 5 == 0 {
-        println!("Buzz")
-    } else {
-        return num;
+        if n % 15 == 0 {
+            println!("FizzBuzz");
+        } else if n % 3 == 0 {
+           println!("Fizz");
+        } else if n % 5 == 0 {
+            println!("Buzz")
+        } else {
+            println!("{}", n);
+        }
     }
 }
